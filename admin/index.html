@@ -1,0 +1,33 @@
+<?php
+session_start();
+if($_SESSION['sid']==session_id()){}
+else
+echo "<script>window.location='../login.php'</script>";
+?>
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>CSS MenuMaker</title>
+</head>
+<body>
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'>Home</a></li>
+   <li><a href='#'>Passout</a></li>
+   <li><a href='#'>New Entries</a></li>
+   <li><a href='#'>Faculty</a></li>
+   <li><a href='#'>Exam Timetable</a></li>
+   <li><a href='#'>Complaints</a></li>
+   <li><a href='../logout.php'>Logout</a></li>
+</ul>
+</div>
+
+</body>
+<html>
